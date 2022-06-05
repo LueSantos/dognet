@@ -1,5 +1,5 @@
 _out.json(
     _db.query(`
-    SELECT * FROM Categoria
+    SELECT nome AS name, codigo AS code FROM Categoria
     `)
 )
