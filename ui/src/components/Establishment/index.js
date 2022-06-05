@@ -53,7 +53,7 @@ const Establishment = () => {
   }, []);
 
   return (
-    <div>
+    <div style={{padding: "15px"}}>
    <Table columns={columns} dataSource={list} />
     </div>
 

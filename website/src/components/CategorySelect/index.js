@@ -7,24 +7,22 @@ const CategorySelect = () => {
 
   useEffect(() => {
     _service({
-      url: '/services/category/list',
-      method: 'GET',
+      url: '/category/list',
       success: (response) => {
         setList(response.json);
       },
       fail: (e) => {
-        console.log("Service Error", e);
+        console.log('Service Error', e);
       },
     });
   }, []);
 
   return (
-  
-      <Select style={{ width: '250px' }}>
-        {list.map((item) => {
-          return <Select.Option value={item.code}>{item.name}</Select.Option>;
-        })}
-      </Select>
+    <Select style={{ width: '250px' }}>
+      {list.map((item) => {
+        return <Select.Option value={item.code}>{item.name}</Select.Option>;
+      })}
+    </Select>
   );
 };
 export default CategorySelect;
