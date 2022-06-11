@@ -1,0 +1,14 @@
+{
+  "description": "Erro.",
+  "type": "object",
+  "properties": {
+    "error": {
+      "type": "boolean"
+    },
+    "code": {
+      "type": "string-not-empty"
+    }
+  },
+    "required": ["error", "code"]
+  
+}

@@ -1,6 +1,35 @@
-_out.json(
-    _db.query(`
-SELECT nome, email, telefone, endereco,  FROM  estabelecimento 
+const dbEstablishments = _db.query(`
+SELECT   
+estabelecimento.*,
+categoria.nome AS categoria_nome ,
+categoria.codigo AS categoria_codigo
 
-    `)
-)
+FROM estabelecimento 
+
+INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
+WHERE 1=1 
+and estabelecimento.active = true
+and categoria.active = true
+
+`);
+
+// Esta forma não é muito utilizada no React
+const list = _val.list();
+for (const dbEstablishment of dbEstablishments) {
+  list.add(
+    _val.map()
+      .set('uid', dbEstablishment.getString('uid'))
+      .set('name', dbEstablishment.getString('nome'))
+      .set('email', dbEstablishment.getString('email'))
+      .set('telephone', dbEstablishment.getString('telefone'))
+      .set('address', dbEstablishment.getString('endereco'))
+      .set(
+        'category',
+        _val.map()
+          .set('name', dbEstablishment.getString('categoria_nome'))
+          .set('code', dbEstablishment.getString('categoria_codigo')),
+      ),
+  );    
+}
+
+_out.json(list);

@@ -1,15 +1,15 @@
-import { Layout } from 'antd';
 import React from 'react';
 
-const { Footer } = Layout;
 
-const AppFooter = () => {
+
+
+const Footer = () => {
   
-    <>
-      <Footer>
-      <p> Lues 2022</p>Footer
+    <div>
+      <Footer >
+       Lues 2022
       </Footer>
-    </>
+    </div>
 }
 
-export default AppFooter;
+export default Footer;

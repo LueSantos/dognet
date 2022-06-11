@@ -1,0 +1,17 @@
+
+{
+    "info": {
+      "title": "Dognet",
+      "description": "REST API do dognet utilize com Moderação.",
+      "version": "1.0"
+    },
+    "components": {
+      "securitySchemes": {
+        "BearerAuth": {
+          "type": "http",
+          "scheme": "bearer"
+        }
+      }
+    }
+  }
+  

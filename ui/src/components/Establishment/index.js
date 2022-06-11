@@ -1,12 +1,12 @@
 import React, { useEffect, useState } from 'react';
-import { Table } from 'antd';
+import { Table, Tag } from 'antd';
 import _service from '@netuno/service-client';
 
 const columns = [
     {
       title: 'Nome',
-      dataIndex: 'nome',
-      key: 'nome',
+      dataIndex: 'name',
+      key: 'name',
     },
     {
         title: 'Email',
@@ -15,23 +15,29 @@ const columns = [
       },
     {
       title: 'Telefone',
-      dataIndex: 'telefone',
-      key: 'telefone',
+      dataIndex: 'telephone',
+      key: 'telephone',
     },
     {
       title: 'Endereço',
-      dataIndex: 'endereco',
-      key: 'endereco',
+      dataIndex: 'address',
+      key: 'address',
     },
     {
     title: 'Categoria',
-      dataIndex: 'categoria',
-      key: 'categoria',
-      /* render: (categoria) =>{
-        return <>
-        {categoria.name}
-        </>
-      } */
+      dataIndex: 'category',
+      key: 'category',
+       render: (category) =>{
+        let color = "orange"
+        if(category.code == "usuario"){
+          color = "green"
+        }else if(category.code == "veterinaria"){
+          color = "blue"
+        }
+        return <Tag color={color}>
+        {category.name}
+        </Tag>
+      }    
     },
     
   ];

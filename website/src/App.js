@@ -3,6 +3,7 @@ import {
   BrowserRouter as Router, Link, Route, Switch
 } from "react-router-dom";
 import './App.less';
+import Cadastro from './components/Form';
 import Container from "./components/Layout/Container";
 import Contact from "./components/pages/Contact";
 import Dogs from "./components/pages/Dogs";
@@ -10,19 +11,14 @@ import Home from "./components/pages/Home";
 import Partners from "./components/pages/Partners";
 
 
-
-
-const { Header, Footer, Content } = Layout;
-
-
-
+const { Header, Content, Footer } = Layout;
 
 
 function App() {
   return (
     <Router>
-      <Layout>
-        <Header className='App-header'>
+      <Layout className='layout'>
+        <Header className='App_header'>
           <Menu mode="horizontal">
             <Menu.Item>
               <Link to="/Home">Home</Link>
@@ -38,9 +34,10 @@ function App() {
             </Menu.Item>
           </Menu>
         </Header>
-        <Content>
-          <Switch >
-            <Container>            
+        <Content className="content">
+        
+          <Switch className= "rotas"  >  
+          <Container >                    
                <Route path="/Home" element={<Home />}>
               <>Home</>
             </Route> 
@@ -54,10 +51,11 @@ function App() {
               <>Contato</>
             </Route>
             </Container>
-          </Switch>
-
+            </Switch>         
+            <Cadastro />        
         </Content>
-       <Footer /> 
+        <Footer className='Footer'> Lues  2002 </Footer> 
+
       </Layout>
     </Router>
   );

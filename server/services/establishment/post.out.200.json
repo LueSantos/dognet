@@ -1,0 +1,10 @@
+{
+  "description": "Sucesso.",
+  "type": "object",
+  "properties": {
+    "result": {
+      "type": "boolean"
+    }
+  },
+  "required": ["result"]
+}
