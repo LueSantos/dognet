@@ -15,7 +15,7 @@ _db.insert(
     .set("email",  _req.getString("email"))
     .set("telefone",  _req.getString("telephone"))
     .set("endereco",  _req.getString("address"))
-    .set("fotografia",  _req.getString("photo"))
+    .set("fotografia",  _req.getFile("photo"))
 
 )
 
