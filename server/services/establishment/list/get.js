@@ -18,7 +18,7 @@ AND (
   OR
   estabelecimento.nome LIKE ?
 )
- 
+ LIMIT 10
 `,
   dbSearch,
   dbSearch,

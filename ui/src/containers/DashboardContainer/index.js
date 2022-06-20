@@ -1,17 +1,20 @@
-import React from "react";
-import CategorySelect from "../../components/CategorySelect";
-import Establishment from "../../components/Establishment";
-import "./index.less";
-
-
+import React, {useState} from 'react';
+import CategorySelect from '../../components/CategorySelect';
+import Establishment from '../../components/Establishment';
+import EstablishmentAutoComplete from '../../components/EstablishmentAutoComplete/index';
+import './index.less';
 
 function DashboardContainer() {
- 
-
+  const [categoryCode, setCategoryCode] = useState(null);
+  const onCategoryChange = (newCategoryCode) => {
+    setCategoryCode(newCategoryCode);
+  };
+  
   return (
     <div className="my-dashboard">
-     <CategorySelect />
-     <Establishment />
+      <CategorySelect onChange={onCategoryChange} />
+      <EstablishmentAutoComplete categoryCode={categoryCode} />
+      <Establishment />
     </div>
   );
 }

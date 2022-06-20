@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Select } from 'antd';
 import _service from '@netuno/service-client';
 
-const CategorySelect = () => {
+const CategorySelect = (onChange) => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
@@ -17,12 +17,17 @@ const CategorySelect = () => {
     });
   }, []);
 
+  const onSelectChange = (newValue) =>{
+    if(onChange){
+    onChange(newValue);
+  }
   return (
-    <Select style={{ width: '250px' }}>
+
+    <Select style={{ width: '250px' }} onChange={onSelectChange}>
       {list.map((item) => {
-        return <Select.Option value={item.code}>{item.name}</Select.Option>;
-      })}
+        return <Select.Option  value={item.code}>{item.name}</Select.Option>;
+      })} 
     </Select>
   );
-};
+}};
 export default CategorySelect;
