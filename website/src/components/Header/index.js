@@ -1,22 +1,35 @@
+import { Menu, Layout } from 'antd';
 import React from 'react';
+import { Link } from 'react-router-dom';
+import LogoDog from "../assets/LogoDog.png";
+import "./header.less";
 
-const Header = () => {
+const {Header} = Layout;
+
+const Navbar = () => {
   return (
-    <Menu mode="horizontal">
-      <Menu.Item>
-        <Link to="/Home">Home</Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link to="/Dogs">Cães</Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link to="/Partners">Parceiros</Link>
-      </Menu.Item>
-      <Menu.Item>
-        <Link to="/Contact">Contato</Link>
-      </Menu.Item>
-    </Menu>
+    
+      <Header>
+        
+        <Menu mode="horizontal">
+        <div className='logo'>
+             <img src={LogoDog} alt="Logo Dog"></img>
+          </div>
+          <Menu.Item>
+            <Link to="/Home">Home</Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to="/Dogs">Cães</Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to="/Partners">Parceiros</Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to="/Cadastre">Login</Link>
+          </Menu.Item>
+        </Menu>
+      </Header>
   );
 };
 
-export default Header;
+export default Navbar;

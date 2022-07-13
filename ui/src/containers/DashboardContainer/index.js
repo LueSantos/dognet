@@ -5,7 +5,9 @@ import EstablishmentAutoComplete from '../../components/EstablishmentAutoComplet
 import './index.less';
 
 function DashboardContainer() {
+  
   const [categoryCode, setCategoryCode] = useState(null);
+  
   const onCategoryChange = (newCategoryCode) => {
     setCategoryCode(newCategoryCode);
   };

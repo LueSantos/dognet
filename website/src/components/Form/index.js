@@ -11,7 +11,7 @@ import { UploadOutlined } from '@ant-design/icons';
 
 
 //Usar o FormData() sempre que for usar um upload. Ele é passsado no lugar do Values
-const Cadastro = () => {
+const FormCadastro = () => {
   const onFinish = (values) => {
     const formData = new FormData();
       
@@ -165,4 +165,4 @@ const Cadastro = () => {
   );
 };
 
-export default Cadastro;
+export default FormCadastro;

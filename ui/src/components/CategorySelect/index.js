@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Select } from 'antd';
 import _service from '@netuno/service-client';
 
-const CategorySelect = (onChange) => {
+const CategorySelect = ({onChange}) => {
   const [list, setList] = useState([]);
 
   useEffect(() => {
