@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 import { Button, Carousel } from 'antd';
-import fotoBoxer from '../assets/boxer.jpg';
+import teste from '../assets/testando.jpg';
 import foto from '../assets/dog_192.png';
 import fotoHusk from '../assets/husk.jpg';
 import fotoLabrador from '../assets/labrador.jpg';
@@ -9,7 +9,7 @@ import fotoLabrador from '../assets/labrador.jpg';
 const contentStyle = {
   height: '300px',
   color: '#fff1',
-  lineHeight: '160px',
+  lineHeight: '260px',
   textAlign: 'center',
   background: '#364d79',
 };
@@ -55,7 +55,7 @@ const Home = () => {
           </div>
           <div>
             <h3 style={contentStyle}>
-              <img src={fotoBoxer} alt="Dog Labrador"></img>
+              <img src={teste} alt="Dog Labrador"></img>
             </h3>
           </div>
         </Carousel>

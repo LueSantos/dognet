@@ -1,8 +1,14 @@
-import React from 'react'
+import React from 'react';
+import '../Layout/container.less';
+import Home from './Home';
 
- const Partners = () => {
+const Partners = () => {
   return (
-    <div>Partners</div>
-  )
-}
+    <>
+      {' '}
+      <h1>Partners</h1>
+      <Home />
+    </>
+  );
+};
 export default Partners;

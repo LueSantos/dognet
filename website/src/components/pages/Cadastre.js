@@ -1,5 +1,7 @@
 import React from "react";
 import FormCadastro from "../Form";
+import "../Layout/container.less"
+
 
 const Cadastre = () => {
     return (
@@ -9,4 +11,4 @@ const Cadastre = () => {
         </> 
         )
 }
-export default Cadastre;
+export default Cadastre;    
