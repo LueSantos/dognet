@@ -1,18 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 
-import { Button, Carousel } from 'antd';
-import teste from '../assets/testando.jpg';
-import foto from '../assets/dog_192.png';
-import fotoHusk from '../assets/husk.jpg';
-import fotoLabrador from '../assets/labrador.jpg';
+import { Button, Col, Divider, Row } from 'antd';
+import Cards from '../Card';
 
-const contentStyle = {
-  height: '300px',
-  color: '#fff1',
-  lineHeight: '260px',
-  textAlign: 'center',
-  background: '#364d79',
-};
+
 
 
 
@@ -37,29 +28,31 @@ const Home = () => {
       <h1>Home</h1>
       <h2> Conecte seu dog ou adote um ! </h2>
       <container>
-        <Carousel autoplay effect="fade">
-          <div >
-            <h3 style={contentStyle}>
-              <img src={foto} alt="Foto de dog"></img>
-            </h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>
-              <img src={fotoHusk} alt="Dog Husk"></img>
-            </h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>
-              <img src={fotoLabrador} alt="Dog Labrador"></img>
-            </h3>
-          </div>
-          <div>
-            <h3 style={contentStyle}>
-              <img src={teste} alt="Dog Labrador"></img>
-            </h3>
-          </div>
-        </Carousel>
+       <section>
+       <Divider orientation="left">Responsive</Divider>
+    <Row
+      gutter={{
+        xs: 8,
+        sm: 16,
+        md: 24,
+        lg: 32,
+      }}
+    >
+      <Col className="gutter-row" span={6}>
+        <div><p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p></div>
+      </Col>
+      <Col className="gutter-row" span={6}>
+        <div><Cards/> </div>
+      </Col>
+      <Col className="gutter-row" span={6}>
+        <div>col-6</div>
+      </Col>
+      <Col className="gutter-row" span={6}>
+        <div>col-6</div>
+      </Col>
+    </Row>
 
+       </section>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting
           industry. Lorem Ipsum has been the industry's standard dummy text ever

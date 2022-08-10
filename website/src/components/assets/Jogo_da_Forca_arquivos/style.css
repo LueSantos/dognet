@@ -1,0 +1,85 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: rgb(142, 231, 243);
+height: 55px;
+}
+
+.logo{
+padding-top: 10px;
+margin-inline: 15px;
+}
+
+.title {
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    color: rgb(46, 217, 3);
+}
+
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    background-color: rgb(66, 146, 208);
+    min-height: 360px;
+}
+
+.buttons  {
+    width: 350px;
+    margin: 0 auto;
+    margin-top: 20px;
+    display: flex;
+}
+ 
+.btns {
+  
+    width: 150px;
+    border-radius: 50px;
+    background-color: aqua;
+    color: rgb(7, 58, 36);
+    margin: 10px;
+    padding: 3px;
+    font-size: 20px;
+}
+
+.atencao{
+    width: 350px;
+    margin-inline: 100px;
+    margin-top: 20px;
+    display: flex;
+}
+
+
+.footer {
+    margin-bottom: -30px;
+    width: 100vw;
+    background-color: rgb(142, 231, 243);
+}
+
+.text_footer  {
+    padding-bottom: 10px;
+    text-align: center;
+    font-size: 24px;
+    color: rgb(9, 9, 9);
+}
+
+
+.social_list {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.social_list li {
+    margin-top: 15px;
+    margin-inline: 5px;
+    cursor: pointer;
+}
+

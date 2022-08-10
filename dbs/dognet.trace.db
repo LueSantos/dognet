@@ -2695,3 +2695,9 @@ INNER JOIN categoria ON estabelecimento.categoria_id = categoria.id
 WHERE 1=1 
 and estabelecimento.active = true
 and categoria.active = true [42001-200]
+2022-07-14 17:39:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table ""estabelecimento"" alter column ""telefone"" type varchar_ignorecase(250) default[*] '';"; SQL statement:
+alter table "estabelecimento" alter column "telefone" type varchar_ignorecase(250) default ''; [42000-200]
+2022-07-14 17:55:34 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "alter table ""estabelecimento"" alter column ""telefone"" type varchar_ignorecase(250) default[*] '';"; SQL statement:
+alter table "estabelecimento" alter column "telefone" type varchar_ignorecase(250) default ''; [42000-200]
