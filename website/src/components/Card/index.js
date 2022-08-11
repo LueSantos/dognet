@@ -21,7 +21,7 @@ const Cards = () => {
             style={{
               width: 220,
             }}
-            cover={<img src={fotoLabrador} alt="Dog Labrador"></img>}
+            cover={<img src={fotoLabrador} alt="Dog Labrador"> </img>}
           >
             <Tag color="green">Adote-me</Tag>
             <Meta
