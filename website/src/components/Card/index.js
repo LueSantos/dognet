@@ -14,14 +14,18 @@ const content = (
 const Cards = () => {
   return (
     <>
-      <div>
+      <div className="container_card">
         <Popover content={content} title="LABRADOR">
           <Card
             hoverable
             style={{
               width: 220,
             }}
-            cover={<img src={fotoLabrador} alt="Dog Labrador"> </img>}
+            cover={
+              <img src={fotoLabrador} alt="Dog Labrador">
+              
+              </img>
+            }
           >
             <Tag color="green">Adote-me</Tag>
             <Meta

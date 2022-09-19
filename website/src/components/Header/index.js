@@ -16,13 +16,13 @@ const Navbar = () => {
              <img src={LogoDog} alt="Logo Dog"></img>
           </div>
           <Menu.Item>
-            <Link to="/Home">Home</Link>
-          </Menu.Item>
-          <Menu.Item>
             <Link to="/Dogs">Cães</Link>
           </Menu.Item>
           <Menu.Item>
             <Link to="/Partners">Parceiros</Link>
+          </Menu.Item>
+          <Menu.Item>
+            <Link to="/Home">Contatos</Link>
           </Menu.Item>
           <Menu.Item>
             <Link to="/Cadastre">Login</Link>

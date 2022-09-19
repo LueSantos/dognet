@@ -1,4 +1,4 @@
-import React from 'react';
+ import React from 'react';
 import { Col, Divider, Row } from 'antd';
 import '../Content';
 
@@ -34,14 +34,7 @@ const Partners = () => {
 };
 export default Partners;
 
-{
-  /*  <h1>Partners</h1>
-      <div className='partners'>
-         <h3> Nossos Parceiros </h3>
-         <p>dfgkfghlkcfjhclkjghdfgka;dfga;fgjhadf;gkadfjhg;akdfgjhdf;gkdfjhg;kadfghjadf;kghjdfgk;dfjhg;adfgjkha;fkgj</p>
-      </div>
-      <div className=''>
-         <h3> Nossos Parceiros </h3>
-      </div>
-    </> */
-}
+
+
+
+

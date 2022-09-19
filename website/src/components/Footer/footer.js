@@ -7,14 +7,18 @@ const Rodape = () => {
   return (
     <Footer>
       <>
-      <div className="midiaSocial">
-        <LinkedinOutlined />
-        <GithubOutlined />
-      </div>
-     
-      <div className="text_footer">
-      <p> 2022 NetDogs </p>
-      </div>
+        <ul className='midia_social'>
+          <li>
+            <LinkedinOutlined />
+          </li>
+          <li>
+            <GithubOutlined />
+          </li>
+        </ul>
+
+        <span className="text_footer">
+          <p>   NetDogs 2022 </p>
+        </span>
       </>
     </Footer>
   );

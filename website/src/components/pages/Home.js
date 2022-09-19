@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Button, Col, Row } from 'antd';
+import { Button, Col, Divider, Row } from 'antd';
 import foto_dog from '../assets/testando.jpg';
 
 /*  ClickPage = () =>{
@@ -19,24 +19,15 @@ import foto_dog from '../assets/testando.jpg';
 const Home = () => {
   return (
     <>
-      <h1>Adote um cão !</h1>
-      <h2>
-        Não é permitido a comercialização de animais ou serviços!
-        <br />
-        Este site é destinado somente a adoções.
-      </h2>
+      <h1>Seja um parceiro!</h1>
+      <h2>Este site é destinado a adoções de animais e serviços.</h2>
+
+      <Divider />
       <section>
-        <Row
-          gutter={{
-            xs: 8,
-            sm: 16,
-            md: 24,
-            lg: 32,
-          }}
-        >
+        <Row gutter={8} justify="start">
           <Col className="gutter-row" span={6}>
             <div>
-              <h1>Inserir um título aqui </h1>
+              <h2>Serviços de Petshop </h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -54,44 +45,52 @@ const Home = () => {
               <img src={foto_dog} alt="foto de um cão"></img>
             </div>
           </Col>
-          {/*  <Col className="gutter-row" span={2}>
-            <div>col-6</div>
+        </Row>
+        <Button>Cadastre</Button>
+      </section>
+      <Divider />
+      <section>
+        <Row gutter={8} justify="end">
+          <Col className="gutter-row" span={8}>
+            <div>
+              <h2>Serviços Veterinários</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.Lorem
+              </p>
+            </div>
           </Col>
-          <Col className="gutter-row" span={2}>
-            <div>col-6</div>
-          </Col> */}
+          <Col className="gutter-row" span={8}>
+            <div>
+              <img src={foto_dog} alt="foto de um cão"></img>
+            </div>
+          </Col>
         </Row>
       </section>
-      <section>
-        <Col className="gutter-row" span={2}>
-          <div>col-6</div>
-        </Col>
-        <Col className="gutter-row" span={2}>
-          <div>col-6</div>
-        </Col>
-        <Col className="gutter-row" span={8}>
-          <div>
-            <img src={foto_dog} alt="foto de um cão"></img>
-          </div>
-        </Col>
-        <Col className="gutter-row" span={6}>
-          <div>
-            <h1>Inserir um título aqui </h1>
-            <p>
-              Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
-              ever since the 1500s, when an unknown printer took a galley of
-              type and scrambled it to make a type specimen book.Lorem Ipsum is
-              simply dummy text of the printing and typesetting industry. Lorem
-              Ipsum has been the industry's standard dummy text ever since the
-              1500s, when an unknown printer took a galley of type and scrambled
-              it to make a type specimen book.
-            </p>
-          </div>
-        </Col>
-      </section>
 
-      <Button>Cadastre</Button>
+      <section>
+        <Row gutter={8} justify="end">
+          <Col className="gutter-row" span={8}>
+            <div>
+              <h2>Serviços Veterinários</h2>
+              <p>
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley
+                of type and scrambled it to make a type specimen book.Lorem
+              </p>
+            </div>
+          </Col>
+          <Col className="gutter-row" span={8}>
+            <div>
+              <img src={foto_dog} alt="foto de um cão"></img>
+            </div>
+          </Col>
+        </Row>
+      </section>
+    
     </>
   );
 };
