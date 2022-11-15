@@ -1,6 +1,7 @@
  import React from 'react';
 import { Col, Divider, Row } from 'antd';
-import '../Content';
+import '../Layout/container.less';
+
 
 const style = {
   background: '#0092ff',
@@ -10,26 +11,29 @@ const style = {
 const Partners = () => {
   return (
     <>
-      <Divider orientation="left">Responsive</Divider>
+      <Divider orientation="left">Seja um doador</Divider>
       <Row
         gutter={{
           lg: 32,
         }}
       >
         <Col className="gutter-row" span={6}>
-          <div style={style}>col-6</div>
+          <div style={style}>Teste aqui</div>
         </Col>
         <Col className="gutter-row" span={6}>
-          <div style={style}>col-6</div>
+          <div style={style}>Teste aqui</div>
         </Col>
         <Col className="gutter-row" span={6}>
-          <div style={style}>col-6</div>
+          <div style={style}>Teste aqui</div>
         </Col>
         <Col className="gutter-row" span={6}>
-          <div style={style}>col-6</div>
+          <div style={style}>Teste aqui</div>
         </Col>
       </Row>
-    </>
+    
+
+<Divider orientation="left">TESTANDO</Divider>
+</>
   );
 };
 export default Partners;

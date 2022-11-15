@@ -15,23 +15,16 @@ const Cards = () => {
   return (
     <>
       <div className="container_card">
-        <Popover content={content} title="LABRADOR">
+        <Popover content={content} title="FILHOTE">
           <Card
             hoverable
             style={{
-              width: 220,
+              width: 200,
             }}
-            cover={
-              <img src={fotoLabrador} alt="Dog Labrador">
-              
-              </img>
-            }
+            cover={<img src={fotoLabrador} alt="Dog Labrador"></img>}
           >
-            <Tag color="green">Adote-me</Tag>
-            <Meta
-              title=" Filhote 1"
-              description="Colocar as infos do dog e a tag para sinalizar se está para adoção"
-            />
+            <Tag color="green">Adote-me</Tag> 
+            <Meta title=" Filhote" description="Saiba mais..." />
           </Card>
         </Popover>
       </div>

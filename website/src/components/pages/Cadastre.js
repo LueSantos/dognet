@@ -8,6 +8,7 @@ const Cadastre = () => {
         <>
         <h3>Entre na sua conta ou casdastre já!</h3>
         <FormCadastro></FormCadastro>
+        <myButton></myButton>
         </> 
         )
 }

@@ -7,7 +7,7 @@ const Dogs = () => {
   return (
    
     <section className='cards_dog'>
-      <Divider orientation="left">Doações de Filhotes</Divider>
+      <Divider orientation="center">Doações de Filhotes</Divider>
       <Row
         gutter={{
           xs: 8,
@@ -29,7 +29,7 @@ const Dogs = () => {
           <Card className="card_itens" />
         </Col>
 
-        <Divider orientation="left">Doações de Cães Adultos</Divider>
+        <Divider orientation="center">Doações de Cães Adultos</Divider>
 
         <Col className="gutter-row" span={6}>
           <Card className="card_itens" />
