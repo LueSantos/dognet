@@ -18,6 +18,9 @@ function App() {
       <Content>
         <Switch>
           <Container>
+          <Route path="#" element={<Home />}>
+              <Home />
+            </Route>
             <Route path="/Home" element={<Home />}>
               <Home />
             </Route>

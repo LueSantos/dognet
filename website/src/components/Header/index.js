@@ -8,11 +8,16 @@ const { Header } = Layout;
 
 const Navbar = () => {
   return (
-    <Header>
-      <Menu mode="horizontal" className='menu_teste'>
+    <Header >
+      <Menu mode="horizontal">
         <div className="logo">
-          <img src={LogoDog} alt="Logo Dog" width={60}></img>
+          <Menu.Item>
+            <Link to="/Home">
+              <img src={LogoDog}  alt="Logo Dog" width={55}></img>            
+            </Link>
+          </Menu.Item>
         </div>
+
         <Menu.Item>
           <Link to="/Partners">Quem somos</Link>
         </Menu.Item>
@@ -22,11 +27,11 @@ const Navbar = () => {
         </Menu.Item>
 
         <Menu.Item>
-          <Link to="/Home">Parceiros</Link>
+          <Link to="/">Tela de Login</Link>
         </Menu.Item>
 
         <Menu.Item>
-          <Link to="/Cadastre">Login</Link>
+          <Link to="/Cadastre">Tela de cadastro</Link>
         </Menu.Item>
       </Menu>
     </Header>
