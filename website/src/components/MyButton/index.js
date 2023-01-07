@@ -4,7 +4,7 @@ import { Button } from 'antd';
 
 function MyButton({ text, onClick }) {
   return (
-    <div>
+    <div className="btn-cadastro">
       <Button type="primary" onClick={ onClick }>
         { text }
       </Button>

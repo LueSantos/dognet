@@ -3,6 +3,9 @@ import { Button, Col, Divider, Row } from 'antd';
 import foto_dog from '../assets/testando.jpg';
 import banner_dog from '../assets/banner_dogs_2.jpg';
 import foto_qs from '../assets/foto_qs.jpg';
+import '../pages/styles.less';
+import MyButton from '../MyButton';
+
 
 /*  ClickPage = () =>{
     
@@ -20,11 +23,9 @@ import foto_qs from '../assets/foto_qs.jpg';
 const Home = () => {
   return (
     <>
-      <div className="foto_banner-dog">
-        <img src={banner_dog} width="100%" alt="cães no muro"></img>
-        <div className="btn-cadastro">
-          <Button>Adote um Cão</Button>
-        </div>
+      <div >
+        <img className="foto_banner-dog" src={banner_dog} alt="cães no muro"></img>        
+        <MyButton/>     
       </div>
       <h2>Este site é destinado a adoções de animais e serviços.</h2>
       <Divider />
@@ -33,7 +34,7 @@ const Home = () => {
         <Row gutter={8} justify="start">
           <Col className="gutter-row" span={12}>
             <div className="box-area-text">
-              <h2>Quem Somos </h2>
+              <h2 className='title-box-area-text'>Quem Somos </h2>
               <ul>
                 <li>Lorem Ipsum is simply</li> 
                 <li>Lorem Ipsum is simply</li> 
@@ -61,7 +62,7 @@ const Home = () => {
           </Col>
           <Col className="gutter-row" span={12}>
             <div className="box-area-text">
-              <h2>Serviços Veterinários</h2>
+              <h2 className='title-box-area-text'>Serviços Veterinários</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -79,7 +80,7 @@ const Home = () => {
         <Row gutter={8} justify="start">
           <Col className="gutter-row" span={12}>
             <div className="box-area-text">
-              <h2>Serviços Pet-Shops</h2>
+              <h2 className='title-box-area-text'>Serviços Pet-Shops</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

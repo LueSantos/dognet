@@ -6,7 +6,7 @@ import "../Layout/container.less"
 const Cadastre = () => {
     return (
         <>
-        <h3>Entre na sua conta ou casdastre já!</h3>
+        <h3 className="title-register">Faça parte da maior comunidade virtual de cães!</h3>
         <FormCadastro></FormCadastro>
         <myButton></myButton>
         </> 
