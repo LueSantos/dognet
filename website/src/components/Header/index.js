@@ -8,26 +8,22 @@ const { Header } = Layout;
 
 const Navbar = () => {
   return (
-    <Header >
+    <Header>
       <Menu mode="horizontal">
         <div className="logo">
           <Menu.Item>
             <Link to="/Home">
-              <img src={LogoDog}  alt="Logo Dog" width={55}></img>            
+              <img src={LogoDog} alt="Logo Dog" width={55}></img>
             </Link>
           </Menu.Item>
         </div>
 
         <Menu.Item>
-          <Link to="/Partners">Quem somos</Link>
+          <Link to="/Login">Login</Link>
         </Menu.Item>
 
         <Menu.Item>
           <Link to="/Dogs">Pets</Link>
-        </Menu.Item>
-
-        <Menu.Item>
-          <Link to="/">Tela de Login</Link>
         </Menu.Item>
 
         <Menu.Item>

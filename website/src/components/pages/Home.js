@@ -5,7 +5,7 @@ import banner_dog from '../assets/banner_dogs_2.jpg';
 import foto_qs from '../assets/foto_qs.jpg';
 import '../pages/styles.less';
 import MyButton from '../MyButton';
-
+import { HeartOutlined } from '@ant-design/icons';
 
 /*  ClickPage = () =>{
     
@@ -23,25 +23,47 @@ import MyButton from '../MyButton';
 const Home = () => {
   return (
     <>
-      <div >
-        <img className="foto_banner-dog" src={banner_dog} alt="cães no muro"></img>        
-        <MyButton/>     
+      <div>
+        <img
+          className="foto_banner-dog"
+          src={banner_dog}
+          alt="cães no muro"
+        ></img>
+        <MyButton />
       </div>
       <h2>Este site é destinado a adoções de animais e serviços.</h2>
       <Divider />
 
       <section className="container-main">
-        <Row gutter={8} justify="start">
+        <Row gutter={8} justify="center">
           <Col className="gutter-row" span={12}>
             <div className="box-area-text">
-              <h2 className='title-box-area-text'>Quem Somos </h2>
+              <h2 className="title-box-area-text">Quem Somos</h2>
               <ul>
-                <li>Lorem Ipsum is simply</li> 
-                <li>Lorem Ipsum is simply</li> 
-                <li>Lorem Ipsum is simply</li> 
-                <li>Lorem Ipsum is simply</li> 
+                <li>
+                  <HeartOutlined /> Lorem Ipsum is simply
+                </li>
+                <li>
+                  <HeartOutlined /> Lorem Ipsum is simply
+                </li>
+                <li>
+                  <HeartOutlined /> Lorem Ipsum is simply
+                </li>
+                <li>
+                  <HeartOutlined /> Lorem Ipsum is simply
+                </li>
                 <p>
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, Aenean commodo ligula eget dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean massa. nascetur ridiculus mus.</p>                          
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                  Aenean commodo ligula eget dolor. Aenean massa. Cum sociis
+                  natoque penatibus et magnis dis parturient montes, Aenean
+                  commodo ligula eget dolor. Aenean massa. Aenean commodo ligula
+                  eget dolor. Aenean massa. nascetur ridiculus mus. Lorem ipsum
+                  dolor sit amet, consectetuer adipiscing elit. Aenean commodo
+                  ligula eget dolor. Aenean massa. Cum sociis natoque penatibus
+                  et magnis dis parturient montes, Aenean commodo ligula eget
+                  dolor. Aenean massa. Aenean commodo ligula eget dolor. Aenean
+                  massa. nascetur ridiculus mus.
+                </p>
               </ul>
             </div>
           </Col>
@@ -62,7 +84,7 @@ const Home = () => {
           </Col>
           <Col className="gutter-row" span={12}>
             <div className="box-area-text">
-              <h2 className='title-box-area-text'>Serviços Veterinários</h2>
+              <h2 className="title-box-area-text">Serviços Veterinários</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy
@@ -80,7 +102,7 @@ const Home = () => {
         <Row gutter={8} justify="start">
           <Col className="gutter-row" span={12}>
             <div className="box-area-text">
-              <h2 className='title-box-area-text'>Serviços Pet-Shops</h2>
+              <h2 className="title-box-area-text">Serviços Pet-Shops</h2>
               <p>
                 Lorem Ipsum is simply dummy text of the printing and typesetting
                 industry. Lorem Ipsum has been the industry's standard dummy

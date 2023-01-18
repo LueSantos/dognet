@@ -7,7 +7,7 @@ import Container from './components/Layout/Container';
 import Cadastre from './components/pages/Cadastre';
 import Dogs from './components/pages/Dogs';
 import Home from './components/pages/Home';
-import Partners from './components/pages/Partners';
+import Login from './components/pages/Login';
 
 const { Content } = Layout;
 
@@ -27,8 +27,8 @@ function App() {
             <Route path="/Dogs" element={<Dogs />}>
               <Dogs />
             </Route>
-            <Route path="/Partners" element={<Partners />}>
-              <Partners />
+            <Route path="/Login" element={<Login />}>
+              <Login />
             </Route>
             <Route path="/Cadastre" element={<Cadastre />}>
               <Cadastre />
