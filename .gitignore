@@ -16,3 +16,4 @@ package-lock.json
 
 config/_development.json
 config/_production.json
+config/_sample.json
