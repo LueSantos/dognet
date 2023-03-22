@@ -1,3 +1,1 @@
-/*
- * Production dynamic configurations is here.
- */
+config.env = 'production'

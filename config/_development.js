@@ -1,3 +1,1 @@
-/*
- * Development dynamic configurations is here.
- */
+config.env = 'development'
